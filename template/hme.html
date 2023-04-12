@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="hme.html" class="logo"><h2>Time<span>zone.</span></h2></a>
+    <nav class="navbar">
+        <a href="hme.html">home</a>
+        <a href="shopp.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">contact us</a>
+        
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#"  id="cart-btn" class="fas fa-shopping-cart"></a>
+        <a href="loginn.html" id="login-btn" class="fas fa-user"></a>
+    </div>
+
+    
+    </header>
+    <section class="home">
+
+        <div class="slides-container">
+    
+            <div class="slide active">
+            
+                
+                <div class="image">
+                
+                    <img src="C:\Users\rithi\Downloads\hme29.webp" alt="">
+                    
+                </div>
+            </div>
+            
+    
+            <div class="slide">
+                
+                <div class="image">
+                    <img src="C:\Users\rithi\Downloads\hme31.webp" alt="">
+                  
+                </div>
+            </div>
+    
+            <div class="slide">
+               
+                <div class="image">
+                    <img src="C:\Users\rithi\Downloads\hme32.webp" alt="">
+                    
+                </div>
+            </div>
+
+            <div class="slide">
+               
+                <div class="image">
+                    <img src="C:\Users\rithi\Downloads\hme33.webp" alt="">
+                    
+                </div>
+            </div>
+    
+        </div>
+    
+        <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+        <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+    
+    </section>
+    <section class="banner-container">
+        <div class="banner">
+            <img src="C:\Users\rithi\Downloads\gift2.jpg" alt="">
+        <div class="content">
+           
+            <a href="shopp.html" class="btn">  shop now</a>
+        </div>
+    </div>
+    
+        <div class="banner">
+            <img src="C:\Users\rithi\Downloads\gift3.jpg" alt="">
+            <div class="content">
+               
+                <a href="shopp.html" class="btn">  shop now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="C:\Users\rithi\Downloads\gift4.jpg" alt="">
+            <div class="content">
+                
+                <a href="shopp.html" class="btn">  shop now</a>
+            </div>
+        </div>
+    
+        
+        </div>
+    
+    </section>
+    
+
+
+    <section class="credit">Timezone | Online Watch Store!</section>
+
+    <script>
+        let slides = document.querySelectorAll('.home .slides-container .slide');
+        let index = 0;
+  
+  function next(){
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+  }
+  
+  function prev(){
+      slides[index].classList.remove('active');
+      index = (index - 1 + slides.length) % slides.length;
+      slides[index].classList.add('active');
+  }
+      </script>
+    
+    
+</body>
